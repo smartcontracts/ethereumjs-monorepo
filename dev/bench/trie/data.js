@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646341578432,
+  "lastUpdate": 1646776693150,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "751a5d18ae4307145b5e3df881aaa40a81e8b3b4",
-          "message": "VM: Add comparison testing between branchs for State Test Runner (#1634)\n\n* Add diff tester and performance\r\n\r\n* update script\r\n\r\n* Simplify script\r\n\r\n* Readme updates\r\n\r\n* move start\r\n\r\n* Update stashing logic in script",
-          "timestamp": "2022-01-18T17:34:16+01:00",
-          "tree_id": "bd89dc94267ad0c9b79afbd5142f3ab626231fd1",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/751a5d18ae4307145b5e3df881aaa40a81e8b3b4"
-        },
-        "date": 1642523923527,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 14606,
-            "range": "±15.85%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 12590,
-            "range": "±18.96%",
-            "unit": "ops/sec",
-            "extra": "49 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 16591,
-            "range": "±2.02%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 13097,
-            "range": "±14.95%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 4985,
-            "range": "±8.76%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 816,
-            "range": "±16.80%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 187,
-            "range": "±10.43%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 14.03,
-            "range": "±190.48%",
-            "unit": "ops/sec",
-            "extra": "11 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 17.04,
-            "range": "±15.46%",
-            "unit": "ops/sec",
-            "extra": "33 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2608,6 +2521,93 @@ window.BENCHMARK_DATA = {
             "name": "Checkpointing: 5000 iterations",
             "value": 15.96,
             "range": "±30.43%",
+            "unit": "ops/sec",
+            "extra": "31 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e69612033bf03e1d7ed47ee6a388fccb36770b55",
+          "message": "merge: kiln v2 updates (#1750)\n\n* update random to prevRandao\r\n* improve optimistic sync todo note\r\n* add engine_exchangeTransitionConfigurationV1\r\n* remove kintusgi folder and add wip kiln folder\r\n* update newPayload test (random -> prevRandao)\r\n* update exchangeTransitionConfiguration\r\n* add tests for exchangeTransitionConfigurationV1\r\n* only parse jwtSecret if rpcEngine && rpcEngineAuth\r\n* devnet5 instructions (#1766)\r\n* client: increase json parser size (#1769)\r\n* improve/clarify kiln readme\r\n* touch ups\r\nCo-authored-by: g11tech <76567250+g11tech@users.noreply.github.com>",
+          "timestamp": "2022-03-08T13:52:52-08:00",
+          "tree_id": "27859ea1406655d56a24d35d1f65bef1430dac23",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e69612033bf03e1d7ed47ee6a388fccb36770b55"
+        },
+        "date": 1646776692582,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 12690,
+            "range": "±17.01%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 15308,
+            "range": "±1.00%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 14428,
+            "range": "±2.71%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 9181,
+            "range": "±19.78%",
+            "unit": "ops/sec",
+            "extra": "47 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 9901,
+            "range": "±65.68%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 769,
+            "range": "±7.06%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 163,
+            "range": "±10.91%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 28.31,
+            "range": "±136.84%",
+            "unit": "ops/sec",
+            "extra": "25 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 13.34,
+            "range": "±24.93%",
             "unit": "ops/sec",
             "extra": "31 samples"
           }
